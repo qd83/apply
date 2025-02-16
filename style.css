@@ -1,0 +1,213 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* use flexbox layout and center content horizontally and vertically  */
+.grilledoctopus-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+/* make the formbox horizontally centered with 500 pixels max width */
+.grilloctopus-form-wrapper {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 40px 30px 0 3px;
+}
+
+/* custom input box */
+.grilledoctopus-form-input {
+    padding: 13px 28px;
+    border-radius: 5px;
+    border: 2px solid #ecdde0;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    outline: none;
+}
+
+/* used for labels like Job reference number, Name, DoB,... */
+.grilledoctopus-form-label {
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* simply make some space in the bottom and focus functions for labels */
+.grilledoctopus-mb-15 {
+    margin-bottom: 15px;
+}
+
+/* make 2 custom input box on the same line */
+.grilledoctopus-form-split>div {
+    display: flex;
+    gap: 20px;
+}
+
+/* custom fieldset for our form */
+.grilledoctopus-form-fieldset {
+    border: 2px solid #ecdde0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* custom horizontal line */
+hr {
+    border: 1px solid #ecdde0;
+}
+
+/* separately edit input form width for better navigation */
+.grilledoctopus-form-input-size-30 {
+    width: 30%;
+}
+
+/* CUSTOM RADIO INPUT */
+/* a container used for manipulating and customizing */
+.grilledoctopus-form-radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* hide the common radio input */
+.grilledoctopus-form-radio-container input[type="radio"] {
+    display: none;
+}
+
+/* locate Male, Female, Others */
+.grilledoctopus-form-radio-container label span {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 10px 10px;
+}
+
+/* make words of Gender turn red when move cursor to them */
+.grilledoctopus-form-radio-container label span:hover {
+    color: red;
+}
+
+/* custom radio input circle */
+.grilledoctopus-form-radio-container label span:before {
+    content: "";
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: inset 0 0 0 2px #ecdde0;
+}
+
+/* words stay red when click */
+.grilledoctopus-form-radio-container input[type="radio"]:checked+span {
+    color: red;
+}
+
+/* custom effect when select */
+.grilledoctopus-form-radio-container input[type="radio"]:checked+span:before {
+    box-shadow: inset 0 0 0 4px red;
+    transition: 0.25s;
+}
+
+/* CUSTOM RADIO INPUT */
+
+/*highlight input box when click */
+.grilledoctopus-form-input:focus {
+    border-color: #ff5b0f;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* highlight label when click the input box */
+.grilledoctopus-mb-15:focus-within .grilledoctopus-form-label {
+    color: red;
+}
+
+/* CUSTOM INPUT CHECKBOX */
+/* a container for better manipulating */
+.grilledoctopus-form-checkbox-container {
+    display: inline-block;
+    font-size: 15px;
+}
+
+/* custom checkbox */
+.grilledoctopus-form-fieldset input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 2px #ecdde0;
+    border-radius: 20%;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* highlight the checkbox that the cursor move to */
+.grilledoctopus-form-fieldset input[type="checkbox"]:hover {
+    background-color: #ecdde0;
+    transition: .25s;
+}
+
+/* custom checkbox effect when clicked */
+.grilledoctopus-form-fieldset input[type="checkbox"]:checked {
+    background-color: #ff5b0f;
+    box-shadow: inset 0 0 0 5px #ff5b0f;
+}
+
+/* CUSTOM INPUT CHECKBOX */
+
+/* custom text area */
+.textarea {
+    border: 2px solid #ecdde0;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    height: 100px;
+    width: 520px;
+    transition: all .25s;
+}
+
+/* hightlight text area when clicked */
+.textarea:focus {
+    outline: none;
+    border: 2px solid #ff5b0f;
+}
+
+/* custom submit button */
+input[type=submit] {
+    background-color: #ff5b0f;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* highlight the submit button when the cursor move to */
+input[type=submit]:hover {
+    background-color: red;
+    transition: .25s;
+}
+
+/* custom reset button */
+input[type=reset] {
+    background-color: rgb(236, 236, 236);
+    border: none;
+    border-radius: 5%;
+    color: gray;
+    padding: 10px 22px;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
